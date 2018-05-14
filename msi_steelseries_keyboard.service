@@ -1,0 +1,11 @@
+[Unit]
+Description=Color SteelSeries Keyboard
+
+[Service]
+Type=simple
+Environment="PYTHONPATH=/home/%u/.local/lib/python3.6/site-packages"
+WorkingDirectory="/home/%u/my_builds/msiklm_scripts/__pycache__"
+ExecStart="/home/%u/my_builds/msiklm_scripts/__pycache__/msi_keyboard_python.pyc"
+
+[Install]
+WantedBy=default.target

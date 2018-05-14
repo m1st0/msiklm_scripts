@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1770", ATTRS{idProduct}=="ff00", ENV{SYSTEMD_WANTS}=="msi_steelseries_keyboard.service"

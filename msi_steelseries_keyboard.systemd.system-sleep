@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+case $1 in
+  post)
+    systemctl restart msi_steelseries_keyboard
+    ;;
+  pre)
+    systemctl stop msi_steelseries_keyboard            
+    ;;
+esac
