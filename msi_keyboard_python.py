@@ -13,4 +13,4 @@ signal.signal(signal.SIGINT, handler)
 if __name__ == '__main__':
     #os.chdir(os.path.dirname(sys.argv[0]))
     msiK = MsiKeyboard()
-    msiK.smooth_flow()
+    msiK.random_wave()
