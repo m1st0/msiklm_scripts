@@ -1,0 +1,7 @@
+# udev rules for MSI devices
+#   => Give access to control interface to user
+#   => Do not to give control over other interfaces
+#TAG+="uaccess"
+
+KERNEL=="1-7", SUBSYSTEMS=="usb", ATTRS{manufacturer}=="MSI EPF USB", ATTRS{idVendor}=="1770", ATTRS{idProduct}=="ff00", TAG+="uaccess"
+# vim: ft=udevrules
