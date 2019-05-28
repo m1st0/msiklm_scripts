@@ -3,10 +3,10 @@
 from MsiKeyboard import MsiKeyboard
 import signal
 #import os
-#import sys
+from sys import exit
 
 def handler(signum, frame):
-    quit()
+    sys.exit(signum)
 
 signal.signal(signal.SIGINT, handler)
 
