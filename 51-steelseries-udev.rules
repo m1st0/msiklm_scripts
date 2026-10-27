@@ -1,7 +1,4 @@
 #ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1770", ATTRS{idProduct}=="ff00", ENV{SYSTEMD_WANTS}=="msi_steelseries_keyboard.service"
-ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1770", ATTRS{idProduct}=="ff00", GROUP="plugdev", TAG+="uaccess"
-#ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1770", ATTRS{idProduct}=="ff00", GOTO="msi_end"
-ACTION=="remove", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1770", ATTRS{idProduct}=="ff00", GOTO="msi_end"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1770", ATTR{idProduct}=="ff00", TAG+="uaccess"
 
-LABEL="msi_end"
 # vim: ft=udevrules
